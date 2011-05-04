@@ -2,3 +2,4 @@ include setup.py
 include README.rst
 include tox.ini
 include tests/*.py
+include UNLICENSE
