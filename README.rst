@@ -5,9 +5,8 @@ sequences.
 
 Usage
 ~~~~~
-Encoding
-^^^^^^^^
-::
+**Encoding**::
+
   >>> import integer_encoding
   >>> alphabet = 'abc123'
   >>> encode = integer_encoding.encoder(alphabet)
@@ -24,9 +23,8 @@ Encoding
   >>> encode(1307)
   ['b', 'a', 'a', 'b', '3']
 
-Decoding
-^^^^^^^^
-::
+**Decoding**::
+
   >>> import integer_encoding
   >>> decode = integer_encoding.decoder('abc123')
   >>> decode('a')
