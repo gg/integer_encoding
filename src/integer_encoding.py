@@ -10,21 +10,6 @@ def encoder(alphabet):
 
     `alphabet`: a list of hashable elements used to encode an integer; i.e.
     `'0123456789'` is an alphabet consisting of digit character elements.
-
-    >>> from integer_encoding import encoder
-    >>> encode = encoder('abc123')
-    >>> encode(0)
-    ['a']
-    >>> encode(1)
-    ['b']
-    >>> encode(2)
-    ['c']
-    >>> encode(6)
-    ['b', 'a']
-    >>> encode(1306)
-    ['b', 'a', 'a', 'b', '2']
-    >>> encode(1307)
-    ['b', 'a', 'a', 'b', '3']
     """
     base = len(alphabet)
 
@@ -46,21 +31,6 @@ def decoder(alphabet):
 
     `alphabet`: a list of hashable elements used to encode an integer; i.e.
     `'0123456789'` is an alphabet consisting of digit characters.
-
-    >>> from integer_encoding import decoder
-    >>> decode = decoder('abc123')
-    >>> decode('a')
-    0
-    >>> decode('b')
-    1
-    >>> decode('c')
-    2
-    >>> decode('ba')
-    6
-    >>> decode('baab2')
-    1306
-    >>> decode('baab3')
-    1307
     """
     base = len(alphabet)
     index = dict((v, k) for k, v in enumerate(alphabet))
